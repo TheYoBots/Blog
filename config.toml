@@ -1,0 +1,4 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "YoBot_v2"
+theme = "ananke"
