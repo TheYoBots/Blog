@@ -18,4 +18,4 @@ Not too bad ig, but ok, let's just go on and on and on typing. that reminds me o
 
 [link adding time](https://lichess.org/) hope it works --\_(:/)_/-- ig that's how it's done.
 
-<iframe src="https://lichess.org/tv/frame?theme=blue2&bg=dark" style="width: 400px; height: 444px;" allowtransparency="true" frameborder="0"></iframe>
+{{< lichess-embed src="https://lichess.org/@/YoBot_v2/tv" >}}
