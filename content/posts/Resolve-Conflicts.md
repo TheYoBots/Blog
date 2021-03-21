@@ -80,7 +80,7 @@ Now you've completed to major part, you just need to push your changes to GitHub
 
 To do so simply type in your same terminal,
 
-```
+```bash
 git add . -A
 git commit -m "Resolve Merge Conflicts"  # What is under the quotes is subject to change. You can name you commit whatever you would like to name it to.
 git push --force origin <branch name>  # This must be same as the branch name you added in step 1
