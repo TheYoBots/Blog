@@ -6,19 +6,19 @@ draft: true
 
 # How to Resolve GitHub Merge Conflicts?
 
-Here I'll mention how I resolve GitHub Conflicts. I'm sure there are much easier and better methods to do so, but this is just for me to remember how I have done it for future reference.
+Here I'll mention how I resolve GitHub Conflicts. I'm sure there are much easier and better methods to do so, but this is just for me to remember how I have done it for my future reference, and you too can use it.
 
 ## Step 1
 
-A Pull Request that you have created might have conflicts or someone has made a Pull Request to your repository that has conflicts. To resolve these conflicts you can either use the web GitHub UI and resolve those Conflicts or use the command line. In some cases when the web UI is not an option and you are compelled to use the command. 
+A Pull Request that you have created might have conflicts or someone has made a Pull Request to your repository that has conflicts. To resolve these conflicts you can either use the web GitHub UI and resolve those Conflicts or use the command line. In some cases when the GitHub web UI is not an option and you are compelled to use the command line. 
 
 If you have to use your command line to resolve these merge conflicts you'll need a terminal. This terminal must be connected to your relevant GitHub repository. 
 
-If you don't know how to do so on your on local terminal, you can simply use gitpod or another online extension like gitpod. The link to your gitpod terminal will be `https://gitpod.io/#<github repo link>`. Over here you have to replace `<github repo link>` with the **complete link of your GitHub repository (including the `https://` and everything else in the link)**.
+If you don't know how to do so on your on local terminal, you can simply use gitpod or another online extension that is similar to gitpod (like goorm IDE). The link to your gitpod terminal will be `https://gitpod.io/#<github repo link>`. Over here you have to replace `<github repo link>` with the **complete link of your GitHub repository (including the `https://` and everything else in the link)**.
 
 ## Step 2
 
-Now that you have your terminal open, you set your branch to the branch from with the PR is coming. To do so you must type `git checkout <branch name>`, where you replace `<branch name>` with the relevant branch in relation to your PR.
+Now that you have your terminal open, you set your branch to the branch from which the PR is coming. To do so you must type `git checkout <branch name>`, where you replace `<branch name>` with the relevant branch in relation to your PR.
 
 ## Step 3
 
@@ -32,9 +32,9 @@ Now that you have your PR in your terminal you'll have to resolve conflicts. Thi
 
 Understanding how to resolve conflicts might be difficult, so I'll try to explain it the best way I can over here.
 
-Once you have got your PR in your terminal it will mrntion that files `x, y, z, etc...` have merge conflicts. You have to keep all these files in mind because your PR will never get pushed to your repository unless you manually resolve all merge conflicts in all files that have them. 
+Once you have gotten your PR in your terminal it will mention that files `x, y, z, etc...` (file names) have merge conflicts. You have to keep all these files in mind because your PR will never get pushed to your repository unless you manually resolve all merge conflicts in all files that have them. 
 
-If you are using gitpod, as soon as you get your PR from your repository, a bunch of files will have symbols on them (like `C or M or U`). The files that have conflicts are the files with the symbol `C`. Only the files with this label are relevant here as these are the file that have merge conflicts. (`M` means can be merged and `U` means has been added, you might not see all symbols).
+If you are using gitpod, as soon as you get your PR from your repository, a bunch of files will have symbols on them (like `C` or `M` or `U`). The files that have conflicts are the files with the symbol `C`. Only the files with this label are relevant here as these are the file that have merge conflicts. (`M` means that the file can be merged and `U` means that the file has been added, you might not see all symbols).
 
 Now you'll have to open all files with merge conflicts and resolve conflicts. But how do I know where are the conflicts and how to understand them and resolve them? This is what I'll be mentioning below.
 
@@ -42,7 +42,7 @@ Once you open the files which have merge conflicts search for something that wil
 
 `<<<<< HEAD`    # instead of `HEAD` your branch name relevant to your PR.
 
-If you notice, by scolling lower or right below it you will even see something like this...
+If you notice, by scolling lower (or right below it) you will even see something like this...
 
 `=====`
 
