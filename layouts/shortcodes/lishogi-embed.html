@@ -1,0 +1,7 @@
+{{ $url := urls.Parse (.Get "src") }}
+{{ if len (findRE "study" $url.Path) }}
+    {{ .Scratch.Set "out" (delimit (slice $url.Scheme "://" $url.Host "/study/embed" (slicestr $url.Path 6) "#" $url.Fragment)  "") }}
+{{ else }}
+    {{ .Scratch.Set "out" (delimit (slice $url.Scheme "://" $url.Host "/embed" $url.Path "#" $url.Fragment) "") }}
+{{ end }}
+<iframe width=800 height=495 frameborder=0 src="{{ .Scratch.Get "out" }}"></iframe>
